@@ -2,7 +2,7 @@
 function getCrypto(){
 
 
-let display = document.getElementById("display")
+let price = document.getElementById("price")
 let cryptoSelector = document.getElementById("selector").value
 
 
@@ -17,7 +17,9 @@ let cryptoSelector = document.getElementById("selector").value
 	console.log(response);
     response.json().then((data) => {
         console.log(data["Realtime Currency Exchange Rate"]["8. Bid Price"]); //the srtings in the two arrays detail the path within the object
-		//display.innerHTML = data["Realtime Currency Exchange Rate"]["8. Bid Price"];
+	let finalResult = data["Realtime Currency Exchange Rate"]["8. Bid Price"];
+	price.innerHTML =  ` $${parseFloat(finalResult).toFixed(2)}`;
+	
 });
     
 })
@@ -30,7 +32,7 @@ let cryptoSelector = document.getElementById("selector").value
 function convertCrypto(){
 
 
-	let display = document.getElementById("display")
+	let price = document.getElementById("price")
 	let cryptoSelector = document.getElementById("selector").value
 	let cashInput = document.getElementById("cash").value
 	let cashDisplay= document.getElementById("cashDisplay")

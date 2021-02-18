@@ -1,18 +1,57 @@
+
+/*#094E79 blue
+EB9C34 yellow
+*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
-  color: blue;
+  color: #094e79;
   text-align: center;
 }
+
+h2{
+  display:inline;
+}
 .container {
-  border: 1px solid black;
+
+  background-color:#094e79;
+  margin-top:50px;
+  color:white;
+  width:90%;
+  position:relative;
+  padding:10px;
+  border-radius: 10px;;
+}
+
+#price{
+  color:#EB9C34;
 }
 #cash {
   display: block;
+  font-size:24px;
+  width:80px;
 }
 
+
 #selector {
-  display: block;
+  display: inline;
+  background-color:#EB9C34;
+  border:none;
+ color:#094e79;
+  font-size:24px;
+padding: 5px;
+box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+margin-top:10px;
+border-radius: 5px;
+ 
 }
