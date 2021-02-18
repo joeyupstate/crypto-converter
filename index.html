@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+      body {
+        font-family: "Nunito", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Crypto Prices</h1>
+    <section class="container">
+      <h2 id="display">price</h2>
+
+      <select id="selector" onchange="getCrypto()">
+        <option value="null">Select a Crypto</option>
+        <option value="BTC">Bitcoin</option>
+        <option value="ETH">Ethereum</option>
+        <option value="LTC">Litecoin</option>
+        <option value="BCH">Bitcoin Cash</option>
+        <option value="USDT">Teather</option>
+      </select>
+      <h4>Current Price Per Unit</h4>
+      <input id="cash" type="text" onchange="convertCrypto()" />
+      <span id="cashDisplay">quanitty</span>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
