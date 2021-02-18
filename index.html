@@ -11,10 +11,12 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
     <style>
-
       body {
         font-family: "Nunito", sans-serif;
       }
@@ -22,7 +24,12 @@
   </head>
   <body>
     <h1>Crypto Prices</h1>
-    <select id="selector" style ="background-color:#EB9C34" onchange="getCrypto()">
+    <select
+      id="selector"
+      style="background-color: #eb9c34"
+      onchange="getCrypto()"
+      size="1"
+    >
       <option value="null">Select A Crypto</option>
       <option value="BTC">Bitcoin</option>
       <option value="ETH">Ethereum</option>
@@ -30,20 +37,21 @@
       <option value="BCH">Bitcoin Cash</option>
       <option value="USDT">Teather</option>
     </select>
-  
+
     <section class="container">
-     
-     
-  
       <h2>Current Price :<span id="price"></span></h2>
       <h4>How much do you want to spend?</h4>
 
- 
-  
-      <input id="cash" type="text" placeholder ="$" onchange="convertCrypto()" />
-      <span id="cashDisplay">quanitty</span>
+      <input
+        id="cash"
+        type="number"
+        placeholder="$"
+        onchange="convertCrypto()"
+      />
+      <p id="cashp">This will buy you</p>
+    <span id="cash-display"></span>
     </section>
-   
+
     <script src="main.js"></script>
   </body>
 </html>
