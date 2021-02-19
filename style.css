@@ -1,7 +1,7 @@
 /*#094E79 blue
 EB9C34 yellow
 */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
 
 body {
   margin: 0;
@@ -22,36 +22,6 @@ h2 {
   display: inline;
   color: #ffeeee;
 }
-.container {
-  background-color: #094e79;
-  margin-top: 50px;
-  color: #ffeeee;
-  width: 90%;
-  position: relative;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-#price {
-  color: #eb9c34;
-}
-#cash {
-  display: block;
-  font-size: 24px;
-  width: 80px;
-  margin-bottom: 20px;
-  color:#757575;
-
-}
-
-#cash-display {
-  color: #eb9c34;
-}
-
-#cashp{
-  display:none;
-  height:8px;
-}
 #selector {
   display: inline;
   background-color: #eb9c34;
@@ -68,4 +38,111 @@ h2 {
 option {
   overflow: scroll;
   height: 20px;
+}
+.container {
+  background-color: #094e79;
+  margin-top: 50px;
+  color: #ffeeee;
+  width: 90%;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#price {
+  color: #eb9c34;
+}
+#cash-input-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+#amount-to-spend-input {
+  display: inline;
+  font-size: 24px;
+  width: 80px;
+  margin-bottom: 20px;
+  color: #757575;
+}
+
+#convert-cash-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 70px;
+  background-color: #eb9c34;
+  color: #094e79;
+  text-align: center;
+  margin-left: 20px;
+
+  border-radius: 5px;
+}
+
+#convert-cash-button:hover {
+  cursor: pointer;
+  background-color: #e9a750;
+}
+
+#cash-display {
+  color: #eb9c34;
+}
+
+#this-will-buy-you {
+  display: none;
+  height: 8px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 655px) {
+  /* Styles */
+  h2 {
+    display: inline;
+    color: #ffeeee;
+    font-size: 40px;
+  }
+  .container {
+    background-color: #094e79;
+    margin-top: 50px;
+    color: #ffeeee;
+    width: 90%;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-device-width: 800px) {
+  h2 {
+    display: inline;
+    color: #ffeeee;
+    font-size: 40px;
+  }
+  .container {
+    background-color: #094e79;
+    margin-top: 50px;
+    color: #ffeeee;
+    width: 75%;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-device-width: 1200px) {
+  h2 {
+    display: inline;
+    color: #ffeeee;
+    font-size: 50px;
+  }
+  .container {
+    background-color: #094e79;
+    margin-top: 50px;
+    color: #ffeeee;
+    width: 50%;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+  }
 }

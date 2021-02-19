@@ -18,6 +18,7 @@
   </head>
   <body>
     <h1>Crypto Prices</h1>
+    
     <select
       id="selector"
       style="background-color: #eb9c34"
@@ -33,16 +34,25 @@
     </select>
 
     <section class="container">
+      
       <h2>Current Price :<span id="price"></span></h2>
       <h4>How much do you want to spend?</h4>
-
+      <div id="cash-input-container">
       <input
-        id="cash"
+        id="amount-to-spend-input"
         type="number"
         placeholder="$"
-        onchange="convertCrypto()"
+        
       />
-      <p id="cashp">This will buy you</p>
+      
+      <div
+       id = "convert-cash-button" 
+       onclick="convertCrypto()">Done
+      </div>
+      
+    </div>
+
+    <p id="this-will-buy-you">This will buy you</p>
     <span id="cash-display"></span>
     </section>
 

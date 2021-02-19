@@ -31,9 +31,9 @@ function getCrypto() {
 function convertCrypto() {
   let price = document.getElementById("price");
   let cryptoSelector = document.getElementById("selector").value;
-  let cashInput = document.getElementById("cash").value;
+  let cashInput = document.getElementById("amount-to-spend-input").value;
   let cashDisplay = document.getElementById("cash-display");
-  let cashp = document.getElementById("cashp");
+  let cashp = document.getElementById("this-will-buy-you");
 
   if (cashInput[0] >= 0 && cashInput[0] <= 9) {
 	  cashp.style.display="block";
