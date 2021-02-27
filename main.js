@@ -1,3 +1,8 @@
+const currentForm = document.querySelector("#current-form");
+const convertForm = document.querySelector("#convert-form");
+const convertButton = document.querySelector("#convert-cash-button");
+
+
 function getCrypto() {
   let price = document.getElementById("price");
   let cryptoSelector = document.getElementById("selector").value;
@@ -68,3 +73,6 @@ function convertCrypto() {
     alert("Please Input A Number");
   }
 }
+
+currentForm.addEventListener("change",getCrypto);
+convertButton.addEventListener("click", convertCrypto)
