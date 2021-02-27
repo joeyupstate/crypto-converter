@@ -5,55 +5,38 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
-
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-    
-  
-   
   </head>
   <body>
     <h1>Crypto Prices</h1>
-    
-    <select
-      id="selector"
-      style="background-color: #eb9c34"
-      onchange="getCrypto()"
-      size="1"
-    >
-      <option value="null">Select A Crypto</option>
-      <option value="BTC">Bitcoin</option>
-      <option value="ETH">Ethereum</option>
-      <option value="LTC">Litecoin</option>
-      <option value="BCH">Bitcoin Cash</option>
-      <option value="USDT">Teather</option>
-    </select>
+    <form id="current-form">
+      <select id="selector" style="background-color: #eb9c34" size="1">
+        <option value="null">Select A Crypto</option>
+        <option value="BTC">Bitcoin</option>
+        <option value="ETH">Ethereum</option>
+        <option value="LTC">Litecoin</option>
+        <option value="BCH">Bitcoin Cash</option>
+        <option value="USDT">Teather</option>
+      </select>
+    </form>
 
     <section class="container">
-      
       <h2>Current Price :<span id="price"></span></h2>
       <h4>How much do you want to spend?</h4>
       <div id="cash-input-container">
-      <input
-        id="amount-to-spend-input"
-        type="number"
-        placeholder="$"
-        
-      />
-      
-      <div
-       id = "convert-cash-button" 
-       onclick="convertCrypto()">Done
+        <form id="convert-form">
+          <input id="amount-to-spend-input" type="number" placeholder="$" />
+          <div id="convert-cash-button">Done</div>
+        </form>
       </div>
-      
-    </div>
 
-    <p id="this-will-buy-you">This will buy you</p>
-    <span id="cash-display"></span>
+      <p id="this-will-buy-you">This will buy you</p>
+      <span id="cash-display"></span>
     </section>
 
     <script src="main.js"></script>
